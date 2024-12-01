@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AcceuilActivity">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="704dp"
+            android:background="@drawable/acceuilpage2" />
+
+        <androidx.appcompat.widget.SearchView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:id="@+id/search"
+    app:iconifiedByDefault="false"
+    app:searchHintIcon="@null"
+    app:queryHint="Search Your Note"
+    android:focusable="false"
+    android:background="@drawable/lavender_border"
+            />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/pink"
+            android:onClick="add"
+            android:text="Add  "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="190dp"
+
+            android:text="Your Notes "
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="670dp"
+            android:src="@drawable/blocnotes" />
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notes"
+            android:layout_width="399dp"
+            android:layout_height="425dp"
+            android:layout_marginTop="235dp" />
+
+
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardMaxElevation="5dp">
+
+    <!-- Contenu de la carte -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Ligne horizontale pour le titre et l'icône -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Titre de la note -->
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/blue"
+                android:padding="15dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <!-- Bouton menu (ImageView) -->
+        </LinearLayout>
+
+        <!-- Contenu de la note -->
+        <TextView
+            android:id="@+id/Note"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@color/pinkk"
+            android:text="Note"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

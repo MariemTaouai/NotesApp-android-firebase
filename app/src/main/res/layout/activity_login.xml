@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pinkk"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:text="Log In"
+        android:textColor="@color/white"
+        android:textSize="55dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user"
+        android:contentDescription="User Icon" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:backgroundTint="@color/yellow"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:backgroundTint="@color/yellow"
+        android:inputType="textPassword" />
+
+    <!-- Bouton Log In -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/jaunii"
+        android:text="Log In"
+        android:textColor="@color/black" />
+
+    <!-- Texte "Vous n'avez pas de compte ?" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/noAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don't have an account?"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/textsignp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="SIGN UP"
+            android:textColor="@color/pink"
+            android:onClick="onSignUpClick" />
+    </LinearLayout>
+
+    <!-- Logo en bas -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo1"
+        android:contentDescription="App Logo" />
+</LinearLayout>

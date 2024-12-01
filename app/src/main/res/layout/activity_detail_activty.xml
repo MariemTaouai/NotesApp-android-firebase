@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivty"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+
+        android:fontFamily="sans-serif-black"
+        android:text="Detail"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/Note"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="30dp"
+        android:background="@color/blue"
+        android:text="Note"
+
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+     />
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+     />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="220dp"
+        android:orientation="horizontal">
+
+        <!-- Bouton de suppression -->
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+
+            android:src="@drawable/delete" />
+
+        <!-- Bouton de mise à jour -->
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+
+            android:src="@drawable/edit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignupActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/signup"
+        />
+
+    <TextView
+
+        android:layout_width="239dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+
+        android:text="Sign Up"
+        android:textColor="@color/blue"
+        android:textSize="55dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+
+        android:layout_width="100dp"
+        android:layout_height="410dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/user"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:padding="10dp"
+        android:hint="Password"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="330dp"
+        android:padding="10dp"
+        android:hint="you Email"
+        />
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="490dp"
+        android:backgroundTint="@color/black"
+        android:text="Sign Up"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView4"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="610dp"
+        app:srcCompat="@drawable/logo1" />
+</FrameLayout>

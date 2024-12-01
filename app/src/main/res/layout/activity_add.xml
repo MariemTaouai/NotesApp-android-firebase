@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="704dp"
+        android:background="@drawable/backadd" />
+
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:background="@color/blue"
+        android:hint="Title"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/TextAdd"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:padding="10dp"
+        android:background="@color/blue"
+        android:hint="Write Your Note"
+        />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="490dp"
+        android:backgroundTint="@color/grey"
+        android:text="Add"
+        android:onClick="add"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/notecollante"
+        />
+</FrameLayout>
